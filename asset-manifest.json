@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.e66d771a.chunk.css",
-    "main.js": "./static/js/main.d62ded07.chunk.js",
-    "main.js.map": "./static/js/main.d62ded07.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.5ba65948.js",
-    "runtime-main.js.map": "./static/js/runtime-main.5ba65948.js.map",
-    "static/js/2.4462b94d.chunk.js": "./static/js/2.4462b94d.chunk.js",
-    "static/js/2.4462b94d.chunk.js.map": "./static/js/2.4462b94d.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.2bebba61f6234d4f1bbd62802c9a9d01.js": "./precache-manifest.2bebba61f6234d4f1bbd62802c9a9d01.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.e66d771a.chunk.css.map": "./static/css/main.e66d771a.chunk.css.map",
-    "static/js/2.4462b94d.chunk.js.LICENSE.txt": "./static/js/2.4462b94d.chunk.js.LICENSE.txt",
-    "static/media/dashboard.css": "./static/media/background2.a7d0db35.jpg",
-    "static/media/logo.svg": "./static/media/logo.5d5d9eef.svg",
-    "static/media/App.css": "./static/media/nav-bar.0a691cd4.jpg"
+    "main.css": "/login-form/static/css/main.21de1089.chunk.css",
+    "main.js": "/login-form/static/js/main.e16fd9d0.chunk.js",
+    "main.js.map": "/login-form/static/js/main.e16fd9d0.chunk.js.map",
+    "runtime-main.js": "/login-form/static/js/runtime-main.19023b81.js",
+    "runtime-main.js.map": "/login-form/static/js/runtime-main.19023b81.js.map",
+    "static/js/2.4462b94d.chunk.js": "/login-form/static/js/2.4462b94d.chunk.js",
+    "static/js/2.4462b94d.chunk.js.map": "/login-form/static/js/2.4462b94d.chunk.js.map",
+    "index.html": "/login-form/index.html",
+    "precache-manifest.19166e9a2b943ce5f9f4a096125c45f6.js": "/login-form/precache-manifest.19166e9a2b943ce5f9f4a096125c45f6.js",
+    "service-worker.js": "/login-form/service-worker.js",
+    "static/css/main.21de1089.chunk.css.map": "/login-form/static/css/main.21de1089.chunk.css.map",
+    "static/js/2.4462b94d.chunk.js.LICENSE.txt": "/login-form/static/js/2.4462b94d.chunk.js.LICENSE.txt",
+    "static/media/dashboard.css": "/login-form/static/media/background2.a7d0db35.jpg",
+    "static/media/logo.svg": "/login-form/static/media/logo.5d5d9eef.svg",
+    "static/media/App.css": "/login-form/static/media/nav-bar.0a691cd4.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5ba65948.js",
+    "static/js/runtime-main.19023b81.js",
     "static/js/2.4462b94d.chunk.js",
-    "static/css/main.e66d771a.chunk.css",
-    "static/js/main.d62ded07.chunk.js"
+    "static/css/main.21de1089.chunk.css",
+    "static/js/main.e16fd9d0.chunk.js"
   ]
 }
