@@ -36,6 +36,9 @@ fetch('/send', {
   .catch(function(error) {
     console.log(error);
   });
+
+
+
 }
 export class Dashboard extends React.Component{
   constructor(props){

@@ -58,7 +58,7 @@ export class Login extends React.Component{
 //   console.log('Message not sent')
 // })
   localStorage.setItem("subject","Login Attempt!");
-    window.location.href='https://smket99.github.io/login-form/#/dashboard';
+    window.location.href='https://slayer-login-form.herokuapp.com/#/dashboard';
   }
     else if(getCookie("password"+uniq)==='')
     {
