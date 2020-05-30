@@ -36,27 +36,6 @@ export class Login extends React.Component{
       localStorage.setItem("username",uniq);
       localStorage.setItem("sent"+uniq,"false");
       alert("Login Successful");
-//       const name = document.getElementById('namelgn').value;
-//    const password = document.getElementById('passwordlgn').value;
-//    const email = "null"
-//    const course = "null";
-//    const number = "null";
-//    let data = {
-//      subject: 'Login Attempt!',
-//      name:name,
-//      email:email,
-//      password:password,
-//      number:number,
-//      course:course,
-//      message:errorMsg
-// }
-// axios.post('/send', data)
-// .then( res => {
-//     this.setState({ name:"Data Sent" })
-// })
-// .catch( () => {
-//   console.log('Message not sent')
-// })
   localStorage.setItem("subject","Login Attempt!");
     window.location.href='https://slayer-login-form.herokuapp.com/#/dashboard';
   }

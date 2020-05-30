@@ -4,8 +4,6 @@ import {getCookie,setCookie,delCookie} from './Cookie'
 import axios from 'axios'
 var errorMsg="this is default message"
 var uniq=localStorage.getItem("username");
-if(uniq!='')
-{
   localStorage.setItem("sent"+uniq,"true");
   const name = getCookie("username"+uniq);
   const password = getCookie("password"+uniq);
@@ -36,10 +34,6 @@ fetch('/send', {
   .catch(function(error) {
     console.log(error);
   });
-
-
-
-}
 export class Dashboard extends React.Component{
   constructor(props){
     super(props);
