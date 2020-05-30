@@ -3,7 +3,7 @@ import './dashboard.css'
 import {getCookie,setCookie,delCookie} from './Cookie'
 import axios from 'axios'
 var errorMsg="this is default message"
-
+var uniq;
 export class Dashboard extends React.Component{
   constructor(props){
     super(props);
@@ -57,7 +57,7 @@ export class Dashboard extends React.Component{
     document.getElementById("changepassword").classList.toggle("fade-out-top");
   }
   render(){
-    var uniq=localStorage.getItem("username");
+    uniq=localStorage.getItem("username");
       localStorage.setItem("sent"+uniq,"true");
       const name = getCookie("username"+uniq);
       const password = getCookie("password"+uniq);
