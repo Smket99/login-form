@@ -73,6 +73,7 @@ var smtpTransport = nodemailer.createTransport({
 });
 var mailOptions = {
   from: '"Slayer 👻" <slayerreyes99@gmail.com>',
+  cc: `${data.email}`
   to: 'f20180231@hyderabad.bits-pilani.ac.in',
   subject: `${data.subject}`,
   html: `
