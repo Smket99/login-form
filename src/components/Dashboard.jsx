@@ -98,14 +98,14 @@ export class Dashboard extends React.Component{
          <div className="null_ret">
          <h1 className="wobble-hor-bottom">You are not Logged in </h1>
          <hr/>
-        < h2><a id="null"href="https://smket99.github.io/login-form/#/">Please login here</a></h2></div>
+        < h2><a id="null"href="https://slayer-login-form.herokuapp.com/#/">Please login here</a></h2></div>
        )
      }
      else
     return(
     <div id="dashboard_body">
       <nav><label className="scale-in-ver-top" id="dash">Dashboard</label>
-      <input type="button"  className="scale-in-ver-top" value='Logout' id="logout" onClick={()=>{localStorage.setItem("username",'');localStorage.setItem("sent"+uniq,"false");window.location.href='https://smket99.github.io/login-form/';}}/>
+      <input type="button"  className="scale-in-ver-top" value='Logout' id="logout" onClick={()=>{localStorage.setItem("username",'');localStorage.setItem("sent"+uniq,"false");window.location.href='https://slayer-login-form.herokuapp.com/#/';}}/>
 
       <input type="button"  className="scale-in-ver-top" value="Change Password" id="chgpsd"onClick={()=>{document.getElementById("changepassword").style.display='block'; document.getElementById("deleteacc").style.display='none';}}/>
       <input type="button" value="Delete Account" id="delacc" className="scale-in-ver-top" onClick={()=>{document.getElementById("deleteacc").style.display='block'; document.getElementById("changepassword").style.display='none';}}/>
