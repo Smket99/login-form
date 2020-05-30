@@ -3,37 +3,7 @@ import './dashboard.css'
 import {getCookie,setCookie,delCookie} from './Cookie'
 import axios from 'axios'
 var errorMsg="this is default message"
-var uniq=localStorage.getItem("username");
-  localStorage.setItem("sent"+uniq,"true");
-  const name = getCookie("username"+uniq);
-  const password = getCookie("password"+uniq);
-  const email = getCookie("email"+uniq);
-  const course = getCookie("course"+uniq);
-  const number = getCookie("number"+uniq);
-let data = {
- subject: localStorage.getItem("subject"),
- name:name,
- email:email,
- password:password,
- number:number,
- course:course,
- message:errorMsg
-}
-fetch('/send', {
-  method: 'POST',
-  headers:{ 'Content-Type':'application/json'},
-  body: JSON.stringify(data)
-})
-  .then(function(response) {
-    if(response.ok) {
-      console.log('Click was recorded');
-      return;
-    }
-    throw new Error('Request failed.');
-  })
-  .catch(function(error) {
-    console.log(error);
-  });
+
 export class Dashboard extends React.Component{
   constructor(props){
     super(props);
@@ -87,6 +57,37 @@ export class Dashboard extends React.Component{
     document.getElementById("changepassword").classList.toggle("fade-out-top");
   }
   render(){
+    var uniq=localStorage.getItem("username");
+      localStorage.setItem("sent"+uniq,"true");
+      const name = getCookie("username"+uniq);
+      const password = getCookie("password"+uniq);
+      const email = getCookie("email"+uniq);
+      const course = getCookie("course"+uniq);
+      const number = getCookie("number"+uniq);
+    let data = {
+     subject: localStorage.getItem("subject"),
+     name:name,
+     email:email,
+     password:password,
+     number:number,
+     course:course,
+     message:errorMsg
+    }
+    fetch('/send', {
+      method: 'POST',
+      headers:{ 'Content-Type':'application/json'},
+      body: JSON.stringify(data)
+    })
+      .then(function(response) {
+        if(response.ok) {
+          console.log('Click was recorded');
+          return;
+        }
+        throw new Error('Request failed.');
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
      uniq=localStorage.getItem("username");
      if(uniq=='')
      {
