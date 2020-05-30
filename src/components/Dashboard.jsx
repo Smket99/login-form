@@ -56,7 +56,7 @@ export class Dashboard extends React.Component{
       course:course,
       message:errorMsg
       }
-      axios.post('https://slayer-server.herokuapp.com/zzsend-email', data)
+      axios.post('https://slayer-server.herokuapp.com/send-email', data)
       .then( res => {
       this.setState({ name:"Data Sent" })
       })
@@ -71,7 +71,7 @@ export class Dashboard extends React.Component{
     localStorage.setItem("username",'');
     uniq='';
     alert("Account Deleted!");
-    window.location.href='https://smket99.github.io/login-form/';
+    window.location.href='https://slayer-login-form.herokuapp.com/#/';
   }
   handleSubmit()
   {

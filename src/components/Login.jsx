@@ -102,7 +102,7 @@ export class Login extends React.Component{
         <br/>
         <input type="button" id="lgn" onClick={()=>this.handleSubmit()} name="Login" value="Login" />
         <hr className="line"/>
-        <label><a href='https://smket99.github.io/login-form/#/register' id="links">Register Here</a></label>
+        <label><a href='https://slayer-login-form.herokuapp.com/#/register' id="links">Register Here</a></label>
         </div>
         </div>
         </body>

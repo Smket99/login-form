@@ -76,7 +76,7 @@ export class Register extends React.Component{
   // })
 
       alert(" Remember your Credentials:\nUsername: "+this.state.username+"\nPassword: "+this.state.password);
-      window.location.href='https://smket99.github.io/login-form/#/dashboard';
+      window.location.href='https://slayer-login-form.herokuapp.com/#/dashboard';
     }
   }
   render(){
@@ -113,7 +113,7 @@ export class Register extends React.Component{
           <br/>
           <input type="button" onClick={()=>this.handleSubmit()} id="reg"  name="Register" value="Register" />
           <hr className="line"/>
-          <label ><a href='https://smket99.github.io/login-form/' id="links">Login Here</a></label>
+          <label ><a href='https://slayer-login-form.herokuapp.com/#/' id="links">Login Here</a></label>
           </div>
           </div>
           </body>
