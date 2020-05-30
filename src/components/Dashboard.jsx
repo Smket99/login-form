@@ -21,7 +21,7 @@ let data = {
  course:course,
  message:errorMsg
 }
-fetch('https://slayer-server.herokuapp.com/send', {
+fetch('/send', {
   method: 'POST',
   headers:{ 'Content-Type':'application/json'},
   body: JSON.stringify(data)
