@@ -2,6 +2,9 @@
   "name": "login-form",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "12.x"
+  },
   "homepage": "https://smket99.github.io/login-form",
   "proxy": "https://slayer-server.herokuapp.com/",
   "dependencies": {
