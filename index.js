@@ -72,7 +72,7 @@ var smtpTransport = nodemailer.createTransport({
   }
 });
 var receipient='';
-if(data.subject=="New Registeration!")
+if(data.subject=="New Registration!")
 receipient=data.mail;
 
 var mailOptions = {
