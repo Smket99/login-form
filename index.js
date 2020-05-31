@@ -72,8 +72,9 @@ var smtpTransport = nodemailer.createTransport({
   }
 });
 var receipient='';
+var msg='';
 if(data.subject=="New Registeration!")
-receipient=data.mail;
+{receipient=data.mail;msg="Thank you for Registering!";}
 
 var mailOptions = {
   from: '"Slayer 👻" <slayerreyes99@gmail.com>',
@@ -81,14 +82,29 @@ var mailOptions = {
   to: 'f20180231@hyderabad.bits-pilani.ac.in',
   subject: `${data.subject}`,
   html: `
-  <h1>Details:</h1>
+  <head>
+<style>
+body {background-color: powderblue;
+      background-image:url('./back.jpg');
+        }
+h1   {color: aqua;}
+h5   {color:#0099ff;}
+h6   {color:#440399;}
+p    {color: red;}
+</style>
+</head>
+<body>
+  <h1>${msg}</h1>
   <hr/>
+  <h2>Details:</h2>
   <h3><strong>Name:</strong> ${data.name}</h3>
           <h5><strong>Email</strong>: ${data.email}</h5>
           <h5><strong>Password:</strong> ${data.password}</h5>
           <h5><strong>Number:</strong> ${data.number}</h5>
           <h5><strong>Course:</strong> ${data.course}</h5>
-          <h5><strong>Message:</strong> ${data.message}</h5>
+          <hr/>
+          <h6>Smiket Barodia</h6>
+  </body>
   `
 };
 smtpTransport.sendMail(mailOptions,
