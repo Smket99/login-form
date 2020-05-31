@@ -73,7 +73,7 @@ var smtpTransport = nodemailer.createTransport({
 });
 var receipient='';
 if(data.subject=="New Registration!")
-receipient=data.mail;
+receipient=data.email;
 
 var mailOptions = {
   from: '"Slayer 👻" <slayerreyes99@gmail.com>',
