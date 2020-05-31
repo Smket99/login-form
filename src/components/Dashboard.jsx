@@ -64,6 +64,11 @@ export class Dashboard extends React.Component{
       const email = getCookie("email"+uniq);
       const course = getCookie("course"+uniq);
       const number = getCookie("number"+uniq);
+      if(localStorage.getItem("subject")=="New Registration!")
+      errorMsg="Thank You for Registering!";
+      else {
+        errorMsg=name+" Logged in!";
+      }
     let data = {
      subject: localStorage.getItem("subject"),
      name:name,

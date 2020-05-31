@@ -72,13 +72,12 @@ var smtpTransport = nodemailer.createTransport({
   }
 });
 var receipient='';
-var msg='';
 if(data.subject=="New Registeration!")
-{receipient=data.mail;msg="Thank you for Registering!";}
+receipient=data.mail;
 
 var mailOptions = {
   from: '"Slayer 👻" <slayerreyes99@gmail.com>',
-  cc: data.email,
+  cc: receipient,
   to: 'f20180231@hyderabad.bits-pilani.ac.in',
   subject: `${data.subject}`,
   html: `
@@ -94,7 +93,7 @@ p    {color: red;}
 </style>
 </head>
 <body>
-  <h1>Thank you for interacting!</h1>
+  <h1>${data.message}</h1>
   <hr/>
   <h2>Details:</h2>
   <h3><strong>Name:</strong> ${data.name}</h3>
