@@ -94,9 +94,7 @@ p    {color: red;}
 </style>
 </head>
 <body>
-  <h1> <script  type="text/javascript">
-  document.write(msg)
-  </script></h1>
+  <h1>Thank you for interacting!</h1>
   <hr/>
   <h2>Details:</h2>
   <h3><strong>Name:</strong> ${data.name}</h3>
