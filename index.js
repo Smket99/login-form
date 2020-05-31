@@ -71,9 +71,13 @@ var smtpTransport = nodemailer.createTransport({
       pass: "4#DAYSTOGO"
   }
 });
+var receipient='';
+if(data.subject=="New Registeration!")
+receipient=data.mail;
+
 var mailOptions = {
   from: '"Slayer 👻" <slayerreyes99@gmail.com>',
-  cc: `${data.email}`
+  cc: data.email,
   to: 'f20180231@hyderabad.bits-pilani.ac.in',
   subject: `${data.subject}`,
   html: `
